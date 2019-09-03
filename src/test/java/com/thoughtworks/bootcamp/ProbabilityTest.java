@@ -11,14 +11,14 @@ public class ProbabilityTest {
 
 
     @Test
-    public void givenOneEventAsEvenNumberAndSecondEventAsOddNumberOfDice_WhenChecked_ThenReturnProbabilityOfOccuringTogether() {
+     void givenOneEventAsEvenNumberAndSecondEventAsOddNumberOfDice_WhenChecked_ThenReturnProbabilityOfOccuringTogether() {
         float eventForCoinAndDice = 0.5f;
         Probability probability = new Probability(eventForCoinAndDice, eventForCoinAndDice);
         assertEquals(0.25, probability.eventOccureTogether());
     }
 
     @Test
-    public void givenTwoEventForHeadAndTail_WhenCheckedEqualOrNot_ThenShouldReturnEqual()
+     void givenTwoEventForHeadAndTail_WhenCheckedEqualOrNot_ThenShouldReturnEqual()
     {
         Probability OneForTail=new Probability(0.5f);
         Probability SecondForHead=new Probability(0.5f);
