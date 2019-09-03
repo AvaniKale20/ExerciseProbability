@@ -4,7 +4,7 @@ public class Probability {
     private float firstEvent;
     private float secondEvent;
 
-     Probability(float firstEvent, float secondEvent) {
+    Probability(float firstEvent, float secondEvent) {
 
         this.firstEvent = firstEvent;
         this.secondEvent = secondEvent;
@@ -15,9 +15,9 @@ public class Probability {
         firstEvent = probabilityValue;
 
     }
-    public boolean equals(Object object)
-    {
-        Probability probability= (Probability) object;
+
+    public boolean equals(Object object) {
+        Probability probability = (Probability) object;
         return firstEvent == probability.firstEvent;
     }
 
